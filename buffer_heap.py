@@ -40,7 +40,7 @@ class BufferHeap:
                 if op.type == DELETE:
                     target = Node(op.id)
                     if target in bi:
-                        self.sb[i].remove(target)
+                        bi.remove(target)
                 elif op.type == DECREASE_KEY:
                     target = Node(op.id)
                     if target in bi:
